@@ -1,16 +1,74 @@
-# React + Vite
+# Assembly: Endgame
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Assembly: Endgame is a word-guessing game built with React. Players guess a hidden programming-related word one letter at a time while trying to avoid running out of attempts.
 
-Currently, two official plugins are available:
+## How to Play
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. A programming-related word is selected.
+2. Choose letters using the on-screen keyboard.
+3. Correct guesses reveal matching letters.
+4. Incorrect guesses count against the remaining attempts.
+5. Guess the complete word before the game ends.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Random programming-themed words
+- Interactive on-screen alphabet keyboard
+- Correct and incorrect guess feedback
+- Programming-language chips that reflect missed guesses
+- Win and game-over states
 
-## Expanding the Oxlint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React 19
+- JavaScript (JSX)
+- Vite
+- clsx for conditional class names
+- Oxlint
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (LTS recommended)
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/shahan-8/Assemble-Game.git
+cd Assemble-Game
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite.
+
+## Production Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Build the production app |
+| `npm run lint` | Run Oxlint |
+| `npm run preview` | Preview the production build |
+
+## What This Project Practices
+
+- React state with `useState`
+- Rendering lists with `map()`
+- Conditional rendering
+- Derived state and array methods
+- Event handling
+- Conditional CSS class names
+
+## Author
+
+Built by [Shahan](https://github.com/shahan-8).
